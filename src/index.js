@@ -41,7 +41,7 @@ async function run() {
       description = failureState;
     }
 
-    await client.request(
+/*    await client.request(
       'POST /repos/:owner/:repo/statuses/:sha',
       {
         owner,
@@ -53,7 +53,7 @@ async function run() {
         context: contextName,
       },
     );
-
+*/
     if (error) {
       throw error;
     } else {
